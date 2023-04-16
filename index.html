@@ -1,0 +1,102 @@
+<html lang="en">
+	<head>
+		<title>FakeProf</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+		<link rel="icon" href="" type="image/png" sizes="16x16">
+		<link rel="icon" href="" type="image/png" sizes="32x32">
+		<link rel="apple-touch-icon" href=""sizes="180x180">
+		<meta name="keywords" content="">
+    
+	</head>
+    <body>
+<!--music-->
+<button type="button" onclick="aud_play_pause()" id="play" >
+      <div class="center">
+        <div id="control">
+          <div class="border"></div>
+          <div class="play"></div>
+        </div>
+      </div>
+    </button> 
+    <script>var playButton = document.getElementById('control');
+    
+    playButton.addEventListener('click', e => {
+        e.preventDefault();
+        playButton.classList.toggle('is--playing');
+      });</script>
+    
+    <audio id="myAudio" autoplay loop>
+      <source src="mainmenu.mp3" type="audio/mpeg">
+      This HTML5 player is not supported by your browser
+    </audio>
+    
+    <script>
+      function aud_play_pause() {
+       var myAudio = document.getElementById("myAudio");
+       if (myAudio.paused) {
+         myAudio.play();
+       } else {
+         myAudio.pause();
+       }
+      }
+      </script>
+
+<!--video background-->
+<video playsinline autoplay muted loop style="width: 100%;height: 100%;position:absolute;z-index: -2;" poster="CSGO EDIT Video.mp4" >      
+  <source src="CSGO Wallpaper1.27.mp4" type="video/mp4"  >
+</video>
+<!--contact-->
+<div style="display: flex; justify-content: center; ;
+">
+    <div class="all">
+        <a href="https://www.sololearn.com/profile/20114855" target="_blank"class="lefter">
+            <div class="text">SOLOLEARN</div>
+        </a>
+            <a href="https://github.com/FakeProf" target="_blank" class="left">
+              <div class="text">GITHUB</div>
+            </a>
+            <a href="https://steamcommunity.com/id/fakeprof/" id="center">
+              <div class="explainer"><span>Contact</span></div>
+              <div class="text">STEAM</div>
+            </a>
+            <a href="https://www.instagram.com/fakepr0f/"  target="_blank" class="right">
+              <div class="text">INSTAGRAM</div>
+            </a>
+            <a href="https://discord.gg/ " target="_blank" class="righter">
+                <div class="text">DISCORD</div>
+            </a>
+        </div>
+    </div>
+
+    <!--
+      
+      <div class="wrapper">
+        
+        
+        <input class="input-circle input-circle1" type="radio" id="circle1" >
+        <input class="input-circle input-circle2" type="radio" id="circle2" >
+        <input class="input-circle input-circle3" type="radio" id="circle3" >
+        <input class="input-circle input-circle4" type="radio" id="circle4" >
+        <input class="input-circle input-circle5" type="radio" id="circle5" >
+        <input class="input-circle input-circle6" type="radio" id="circle6" >
+        
+        <label for="circle1" class="pajaro pajaro1"><span></span></label>
+        <label for="circle2" class="pajaro pajaro2"><span></span></label>
+        <label for="circle3" class="pajaro pajaro3"><span></span></label>
+        <label for="circle4" class="pajaro pajaro4"><span></span></label>
+        <label for="circle5" class="pajaro pajaro5"><span></span></label>
+        <label for="circle6" class="pajaro pajaro6"><span></span></label>
+        
+        
+      </div>
+    -->
+      
+      
+      
+      
+    </body>
+    </html>
